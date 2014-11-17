@@ -65,8 +65,7 @@ angular.module('Game', ['Grid', 'ngCookies'])
               var cell = GridService.calculateNextPosition(tile, key),
                 next = cell.next;
 
-              if (next &&
-                next.value === tile.value && !next.merged) {
+              if (next && next.value === tile.value && !next.merged) {
 
                 // MERGE
                 var newValue = tile.value * 2;
