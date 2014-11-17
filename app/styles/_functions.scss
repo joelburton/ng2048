@@ -4,7 +4,7 @@
   @if $n >= 0 {
     @for $i from 1 through $n {
       $ret: $ret * $x;
-    } 
+    }
   } @else {
     @for $i from $n to 0 {
       $ret: $ret / $x;
@@ -21,7 +21,7 @@
 }
 
 @mixin opacity($value) {
-  filter:alpha(opacity=$value*100); /* msie */
+  filter: alpha(opacity=$value*100); /* msie */
   -moz-opacity: $value; /* firefox 1.0 */
   -khtml-opacity: $value; /* webkit */
   opacity: $value; /* css 3 */
@@ -48,7 +48,7 @@
 
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
-    @content; 
+    @content;
   }
   @-moz-keyframes #{$name} {
     @content;
@@ -58,7 +58,7 @@
   }
   @keyframes #{$name} {
     @content;
-  } 
+  }
 }
 
 @mixin animation($name...) {

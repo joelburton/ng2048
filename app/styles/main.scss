@@ -47,14 +47,14 @@ html, body {
 }
 
 p {
-   margin-top: 0;
-   margin-bottom: 10px;
-   line-height: 1.65;
-   display: block;
-   -webkit-margin-before: 1em;
-   -webkit-margin-after: 1em;
-   -webkit-margin-start: 0px;
-   -webkit-margin-end: 0px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.65;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
 
 a {
@@ -81,15 +81,15 @@ hr {
 }
 
 #heading {
-   margin-top: 4em;
+  margin-top: 4em;
 }
 
 h1.title {
-   font-size: 80px;
-   font-weight: bold;
-   margin: 0;
-   display: block;
-   float: left;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  display: block;
+  float: left;
 }
 
 .scores-container {
@@ -151,38 +151,38 @@ h1.title {
 }
 
 #instructions {
-   padding-top: 0.5em;
+  padding-top: 0.5em;
 
-   .restart-button {
-      margin-top: -0.5em; /* hack */
-   }
+  .restart-button {
+    margin-top: -0.5em; /* hack */
+  }
 }
 
 .restart-button {
-   display: inline-block;
-   background: #8f7a66;
-   border-radius: 3px;
-   padding: 0 20px;
-   text-decoration: none;
-   color: #f9f6f2;
-   height: 40px;
-   line-height: 42px;
-   cursor: pointer;
-   display: block;
-   text-align: center;
-   float: right;
-   border: none;
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 40px;
+  line-height: 42px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  float: right;
+  border: none;
 }
 
 #content {
-   
+
 }
 
 #game-container {
-   position: relative;
-   width: $width;
-   height: $width;
-   margin: 40px auto;
+  position: relative;
+  width: $width;
+  height: $width;
+  margin: 40px auto;
 }
 
 .game-overlay {
@@ -199,7 +199,7 @@ h1.title {
   font-weight: bold;
   overflow: hidden;
   box-sizing: border-box;
-  
+
   &.ng-enter {
     @include transition(all 1000ms ease-in);
     @include transform(translate(0, 100%));
@@ -217,23 +217,23 @@ h1.title {
     font-size: 16px;
 
     a {
-       display: inline-block;
-       background: #8f7a66;
-       border-radius: 3px;
-       padding: 0 20px;
-       text-decoration: none;
-       color: #f9f6f2;
-       height: 40px;
-       line-height: 42px;
-       cursor: pointer;
-       margin-left: 9px;
+      display: inline-block;
+      background: #8f7a66;
+      border-radius: 3px;
+      padding: 0 20px;
+      text-decoration: none;
+      color: #f9f6f2;
+      height: 40px;
+      line-height: 42px;
+      cursor: pointer;
+      margin-left: 9px;
     }
   }
 }
 
 @mixin game-board($tile-count: 4) {
   $tile-size: ($width - $tile-padding * ($tile-count + 1)) / $tile-count;
-  #game-#{$tile-count} { 
+  #game-#{$tile-count} {
     position: relative;
     padding: $tile-padding;
     cursor: default;
@@ -306,7 +306,7 @@ h1.title {
             $newX: ($tile-size) * ($zeroOffsetX) + ($tile-padding * $zeroOffsetX);
             $newY: ($tile-size) * ($zeroOffsetY) + ($tile-padding * $zeroOffsetY);
 
-            &.position-#{$zeroOffsetX}-#{$zeroOffsetY} { 
+            &.position-#{$zeroOffsetX}-#{$zeroOffsetY} {
               @include transform(translate($newX, $newY));
             }
           }
@@ -350,7 +350,7 @@ h1.title {
   100% {
     opacity: 1;
     @include transform(scale(1));
-  } 
+  }
 }
 
 @include keyframes(pop) {
